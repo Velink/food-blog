@@ -1,0 +1,293 @@
+/* Mobile Layout */
+@media(max-width: 600px){
+    /* Styling Header */
+    .social-media-banner{
+        display: flex;
+        text-align: center;
+        margin: 0 auto;
+       
+    }
+
+    .social-media-banner h5{
+        margin-top: 1%;
+        margin-bottom: 1%;
+        text-align: center;
+        width: auto;
+    }
+
+    .social-media-banner a{
+        text-align: center;
+        margin: 1% auto;
+        padding-left: 0;
+    }
+
+    /* Styling Hamburger Menu */
+    .hamburger{
+        display: flex;
+        background-color: transparent;
+        border:0;
+        cursor: pointer;
+        font-size: 20px;
+
+        margin-top: 2%;
+        margin-left: 80%;
+    }
+
+    .hamburger:focus{
+        outline: none;
+    }
+
+    /* On-click animation of hamburger */
+    .transition > svg {
+    outline: 0;
+    border:none;
+    -moz-transition: transform 1s linear;
+    -webkit-transition: transform 1s linear;
+    transition: transform 0.3s linear;
+    }
+
+    .flip { /* rotate 90 deg */
+    outline: 0;
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    }
+
+    /* Toggle Show Class to Show Drop Down Menu on Hamburger Click */
+    #nav-ul.show{
+        display: flex;
+        margin: 0 auto;
+
+    }
+
+    /* Styling the Navbar */
+
+    .navbar{
+        width: auto;
+        justify-content: center;
+        margin: 0 auto;
+        text-align: center;
+        padding: 0;
+    }
+
+    .navbar ul{
+        display: none;
+        margin: 5% auto;
+        padding: 0;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .navbar ul li a{
+        display: block;
+        padding-bottom: 15%;
+    }
+
+    /* Intro Section Title Underline */
+    .intro-section hr{
+        width: 70%;
+    }
+
+    /* Image Banner and Text */
+    .image-banner h3{
+        font-size: 36px;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 1%;
+        padding-top: 1%;
+        width: auto;
+    }
+    
+    .image-banner p{
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 1%;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .image-banner button{
+        width: auto;
+        overflow: hidden;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 2%;
+        margin-top:2%;
+    }
+
+    /* Styling the Grid */
+    .food-grid{
+        height: auto;
+    }
+    .recipe-grid{
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(6, auto);
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+        text-align: center;
+
+        gap: 2%;
+    }
+
+    .grid-recipe p{
+        padding-left: 5%;
+        padding-right: 5%;
+        width: auto;
+    }
+
+    .grid-recipe img{
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+    }
+
+    /* Styling the Footer */
+    .footer{
+        display: flex;
+        flex-direction: column;
+       
+    }
+    
+    .footer-social-media-banner{
+        margin-left: 1%;
+        margin-top: 2%;
+    }
+
+    .footer-social-media-banner a{
+        padding-left: 3%;
+    }
+}
+
+/* Tablet Layout */
+@media(min-width: 601px) and (max-width: 1100px){
+    /* Styling Social Media Banner */
+    .social-media-banner{
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .social-media-banner a{
+        padding-left: 10%;
+    }
+
+    .social-media-banner h5{
+        white-space: nowrap;
+        padding-right: 15%;
+    }
+
+    /* Styling Navbar */
+    .navbar{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .navbar ul{
+        display: flex;
+        padding: 0;
+        width: 90%;
+        justify-content: center;
+    }
+
+    .navbar ul li{
+        padding: 4%;
+    }
+
+    /* Intro Section Title Underline */
+    .intro-section hr{
+    width: 41%;
+    }
+
+    /* Styling Banner */
+    .image-banner button{
+        width: 30%;
+    }
+
+    /* Styling Recipe Grid */
+    .food-grid{
+        height: auto;
+    }
+    .recipe-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 300px);
+        grid-template-rows: repeat(6, auto);
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+        justify-content: center;
+
+        gap: 2%;
+    }
+
+    .grid-recipe img{
+        width: 100%;
+        height:200px;
+        max-width: 400px;
+    }
+
+    /* Styling The footer */    
+    .footer-social-media-banner a{
+        padding-left: 5%;   
+    }
+
+}
+
+/* Desktop Layout */
+@media(min-width: 1100px) and (max-width: 1400px){
+    /* Styling the Navbar */
+    .navbar{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .navbar ul{
+        display: flex;
+        padding: 0;
+        width: 90%;
+        justify-content: center;
+    }
+
+    .navbar ul li{
+        padding: 4%;
+    }
+
+    /* Styling Intro text */
+    .intro-section hr{
+        width: 22.5%;
+    }
+
+    /* Styling the Grid */
+    .food-grid{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .recipe-grid{
+        width: 100%;
+        margin: 0 auto;
+        justify-content: center;
+    }
+}
+
+@media(min-width: 1401px){
+    /* Styling Navbar */
+    .navbar{
+        display: flex;
+    }
+    .navbar ul{
+        padding-left: 60%;
+    }
+
+    /* Styling Recipe Grid */
+
+    .recipe-grid{
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+
