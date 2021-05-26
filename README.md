@@ -1,4 +1,4 @@
-# Food-Blog
+# food-blog
 Single Page Food Blog - Using HTML , CSS and Vanilla JavaScript 
 
 Features: 
